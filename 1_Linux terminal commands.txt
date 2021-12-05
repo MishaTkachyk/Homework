@@ -1,0 +1,40 @@
+Первое ДЗ 25 гураппа
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir test1
+3) Зайти в папку - cd test1
+4) Создать 3 папки - mkdir test_1 test_2 test_3
+5) Зайти в любоую папку - cd и путь к папке  (cd /Users/mikhailo.tkachyk/group_25)
+6) Создать 5 файлов (3 txt, 2 json) - touch 1.txt 2.txt 3.txt 1.json 2.json
+7) Создать 3 папки - mkdir test_4 test_5 test_6
+8. Вывести список содержимого папки - ls -la
+9) + Открыть любой txt файл - vim 1.txt
+10) + написать туда что-нибудь, любой текст. - I
+11) + сохранить и выйти. - Esc , :wq
+12) Выйти из папки на уровень выше - cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. - mv 1.txt 2.txt dir_6/
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. - cp 1.txt 2.txt /Users/mikhailo.tkachyk/group_25
+15) Найти файл по имени - find /Users/mikhailo.tkachyk/group_25 -name 1.txt
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. – tail /Users/mikhailo.tkachyk/group_25/1.txt (grep "посмотреть содержимое в" /Users/mikhailo.tkachyk/group_25/1.txt)
+17) вывести несколько первых строк из текстового файла - head -5 /Users/mikhailo.tkachyk/group_25/1.txt
+18) вывести несколько последних строк из текстового файла - tail -5 /Users/mikhailo.tkachyk/group_25/1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. - less /Users/mikhailo.tkachyk/group_25/1.txt (выйти «Q»
+20) вывести дату и время – date
+=========
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+curl "http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000"
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+#!/bin/sh
+cd /Users/mikhailo.tkachyk/test_skript1
+mkdir p1 p2 p3
+cd p1
+touch 1.txt 2.txt 3.txt 4.json 5.json
+mkdir p4 p5 p6
+ls -la
+mv p4 p5 p6/
+
+
