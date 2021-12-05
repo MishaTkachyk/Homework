@@ -1,0 +1,264 @@
+2 - ДЗ 25 гураппа
+Git
+                                                                    XML
+ 1. Создать внешний репозиторий c названием XML. - https://github.com/MishaTkachyk/XML.git
+ 2. Клонировать репозиторий XML на локальный компьютер. - git clone https://github.com/MishaTkachyk/XML.git
+ 3. Внутри локального XML создать файл “new.xml”. - touch new.xml
+ 4. Добавить файл под гит. - git add new.xml
+ 5. Закоммитить файл. - git commit -m "created file new.xml"
+ 6. Отправить файл на внешний GitHub репозиторий. - git push
+ 7. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+vim new.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<person>
+<name>Tkachyk Mikhailo Mikhailovich</name>
+<city>Kyiv</city>
+<age>21</age>
+</person>
+ 8. Отправить изменения на внешний репозиторий.
+git commit -am "Add information about myself"
+git push
+ 9. Создать файл preferences.xml - touch preferences.xml
+ 10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+<preferences>
+<Favorite_movie>All parts of Harry Potter</Favorite_movie>
+<Favorite_series>Game of Thrones</Favorite_series>
+<Favorite_food>tasty dish</Favorite_food>
+<Favorite_season_of_the_year>Summer</Favorite_season_of_the_year>
+<Where_would_I_like_to_visit>Iceland</Where_would_I_like_to_visit>
+</preferences>
+ 11. Создать файл skills.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+touch skills.xml
+vim touch skills.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Course_program>
+<Cours1>Basic theory(What is testing,bug-reports,documentation,kinds,methods,testing directions,SDLC,STLC)</Cours1>
+<Cours2>What is client-server architecture</Cours2>
+<Cours3>Server request methods</Cours3>
+<Cours4>Answers server</Cours4>
+<Cours5>Request and response structures</Cours5>
+<Cours6>What JSON, XML. Their structure</Cours6>
+<Cours7>Testing API</Cours7>
+<Cours8>Withdrawal and reading logs</Cours8>
+<Cours9>Postman, Fidler</Cours9>
+<Cours10>VPN.(How it works, why you need it, how to use it, tool options)</Cours10>
+<Cours11>Dev Tools web browsers (Google Chrome, FireFox)</Cours11>
+<Cours12>Mobile testing</Cours12>
+<Cours13>Peculiarity iOS,Android,guidelines</Cours13>
+<Cours14>Building iOS apps with Xcode</Cours14>
+<Cours15>Building Android applications on Android Studio</Cours15>
+<Cours16>Interception of mobile traffic (sniffing) across Charles</Cours16>
+<Cours17>Setting a proxy on iOS and Android</Cours17>
+<Cours18>Command line (terminal) Linux Ubuntu. Copy, create, view, move files on servers without a GUI</Cours18>
+<Cours19>Simple bash scripting, automation of routine tasks on the server</Cours19>
+<Cours20>Access to remote servers</Cours20>
+<Cours21>The basics SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join</Cours21>
+<Cours22>Git</Cours22>
+<Cours23>Jmeter</Cours23>
+<Cours24>Scrum development methodology</Cours24>
+<Cours25>Python.Creating your own client-server application</Cours25>
+</Course_program>
+ 12. Сделать коммит в одну строку. - git commit -am "Создал два XML файла"
+ 13. Отправить сразу 2 файла на внешний репозиторий. - git push
+ 14. На веб интерфейсе создать файл bug_report.xml.
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+<?xml version="1.0" encoding="UTF-8"?>
+<bug_report>
+<ID>12345</ID>
+<title>the cart button on the page is not clickable https://11111.club</title>
+<Expected_result>When you click on the basket icon, a page with the previously added product will open</Expected_result>
+<Actual_result>When you click on the basket icon, nothing happens, the icon is not clickable</Actual_result>
+<Steps_to_reproduce>
+   <steps1>Open https://222.club</steps1>
+   <steps2>Add any product to the cart</steps2>
+   <steps3>Go to the payment page https://11111.club</steps3>
+   <steps4>Click on the trash can icon</steps4>
+</Steps_to_reproduce>
+<Severity>Minor</Severity>
+<Priority>Medium</Priority>
+<Environment>Google Chrome Version 96.0.4664.55 (Official assembly),(x86_64)</Environment>
+</bug_report>
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий XML - git pull
+
+
+
+
+
+
+
+                                          	 
+                                                                 JSON
+ 1. Создать внешний репозиторий c названием JSON - https://github.com/MishaTkachyk/JSON.git
+ 2. Клонировать репозиторий JSON на локальный компьютер – git clone https://github.com/MishaTkachyk/JSON.git
+ 3. Внутри локального JSON создать файл “new.json”. - touch new.json
+ 4. Добавить файл под гит. – git add new.json
+ 5. Закоммитить файл. - git commit -m "created file new.json"
+ 6. Отправить файл на внешний GitHub репозиторий. – git push
+ 7. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+{
+   "name": "О себе",
+   "Information":
+   {
+           "Full_Name": "Ткачик Михаил Михайлович",
+           "City": "Киев",
+           "Age": 21
+   }
+ 
+}
+ 8. Отправить изменения на внешний репозиторий. - git commit -am "Add information about myself"
+git push
+ 9. Создать файл preferences.json – touch preferences.json
+ 10. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+{
+       "name": "Информация о предпочтениях",
+       "preferences":
+       {
+               "Favorite_movie": "Все части Гарри Поттер",
+               "Favorite_series": "Игра Престолов",
+               "Favorite_food": "Всё что вкусное",
+               "Favorite_season_of_the_year": "Лето",
+               "Where_would_I_like_to_visit": "Исландия"
+       }
+} 
+ 
+ 
+ 11. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+{
+"name": "skills",
+"Course_program":
+[
+    	{
+    	"1": "Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC",
+    	"2": "Что такое клиент серверная архитектура.",
+    	"3": "Методы запросов на сервер",
+    	"4": "Ответы сервера",
+    	"5": "Структуры запросов и ответов",
+    	"6": "Что такое JSON, XML. Их структура",
+    	"7": "Тестирование API",
+    	"8": "Снятие и чтение логов",
+    	"9": "Postman, Fidler",
+    	"10": "VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)",
+    	"11": "Dev Tools веб браузеров (Google Chrome, FireFox)",
+    	"12": "Мобильное тестирование",
+    	"13": "Особенность iOS, Android, гайдлайны",
+    	"14": "Сборка iOS приложений на XCode",
+    	"15": "Сборка Android приложений на Android Studio",
+    	"16": "Перехват мобильного трафика (сниффинг) через Charles",
+    	"17": "Настройка прокси на iOS и Android",
+    	"18": "Командная строка (terminal) Linux Ubuntu. Копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса",
+    	"19": "Простой bash скриптринг , автоматизация рутинных задач на сервере",
+    	"20": "Доступ к удалённым серверам",
+    	"21": "Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join",
+    	"22": "Git",
+    	"23": "Jmeter",
+    	"24": "Методология разработки Scrum",
+    	"25": "Python. Создание собственного клиент-серверного приложения"
+ 
+    	},
+    	{
+            	"Duration": "Продолжительность 3 месяца",
+            	"Lessons": "Занятия проводим онлайн в Zoom",
+            	"Practice": "На практике тестируем приложения Currency.com, https://exchange.currency.com, capital.com, banuba.com"
+    	}
+ 
+]
+}
+ 
+ 12. Отправить сразу 2 файла на внешний репозиторий. -
+git add preferences.json skills.json (git add .)
+git commit -m "Создал два json файла"
+git push
+ 13. На веб интерфейсе создать файл bug_report.json. –
+https://github.com/MishaTkachyk/JSON/blob/541188c8626f9b2a80312208cb94e6fdd27f4b76/bug_report.json
+ 14. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 15. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+
+{
+    	"ID": "12345",
+    	"title": "Не кликабельна кнопка корзины на странице https://11111.club",
+    	"Expected_result": "При нажатии на иконку корзины, откроется страница с добавленым ранее товаром",
+    	"Actual_result": "При нажатии на иконку корзины, ничего не происходитБ иконка не кликабельна",
+    	"Steps_to_reproduce": "1)Открыть https://222.club. 2)Добавить в корзину любой товар. 3)Перейти на страницу оплаты https://11111.club 4)Нажать на иконку корзины",
+    	"Severity": "Minor",
+    	"Priority": "Medium",
+    	"Environment": "Google Chrome Версия 96.0.4664.55 (Официальная сборка), (x86_64)"
+ 
+}
+ 
+ 16. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 27. Синхронизировать внешний и локальный репозиторий JSON –
+git fetch
+git pull
+
+
+
+
+
+
+                                                                       TXT 
+ 1. Создать внешний репозиторий c названием TXT. - https://github.com/MishaTkachyk/TXT.git
+ 2. Клонировать репозиторий TXT на локальный компьютер. - git clone https://github.com/MishaTkachyk/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”. - touch new.txt
+ 4. Добавить файл под гит. - git add new.txt 
+ 5. Закоммитить файл. - git commit -m “ Создал TXT файл”
+ 6. Отправить файл на внешний GitHub репозиторий. - git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+vim new.txt
+Name - Tkachyk Mikhailo Mikhailovich
+City - Kyiv
+Age - 21
+ 8. Отправить изменения на внешний репозиторий. - 
+git commit -am "Редактировал TXT файл"
+git push
+ 9. Создать файл preferences.txt - touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+vim preferences.txt
+Favorite_movie - All parts of Harry Potter
+Favorite series - Game of Thrones
+Favorite food - tasty dish
+Favorite season of the year - Summer
+Where would I like to visit - Iceland
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+touch skills.txt
+vim skills.txt
+Course program:
+1)Basic theory(What is testing,bug-reports,documentation,kinds,methods,testing directions,SDLC,STLC);
+2)What is client-server architecture;
+3)Server request methods;
+4)Answers server;
+5)Request and response structures;
+6)What JSON, XML. Their structure;
+7)Testing API;
+8)Withdrawal and reading logs;
+9)Postman, Fidler;
+10)VPN.(How it works, why you need it, how to use it, tool options);
+11)Dev Tools web browsers (Google Chrome, FireFox);
+12)Mobile testing;
+13)Peculiarity iOS,Android,guidelines;
+14)Building iOS apps with Xcode;
+15)Building Android applications on Android Studio;
+16)Interception of mobile traffic (sniffing) across Charles;
+17)Setting a proxy on iOS and Android;
+18)Command line (terminal) Linux Ubuntu. Copy, create, view, move files on servers without a GUI;
+19)Simple bash scripting, automation of routine tasks on the server;
+20)Access to remote servers;
+21)The basics SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join;
+22)Git;
+23)Jmeter;
+24)Scrum development methodology;
+25)Python.Creating your own client-server application.
+ 12. Сделать коммит в одну строку.
+git add .
+git commit -m "Edit 2 fails"
+ 13. Отправить сразу 2 файла на внешний репозиторий. - git push
+ 14. На веб интерфейсе создать файл bug_report.txt. - https://github.com/MishaTkachyk/TXT/blob/4a7b7b20895c5fb3284bf1869df9e2b01c7eda93/bug_report.txt
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. Синхронизировать внешний и локальный репозиторий TXT
+git fetch
+git pull
